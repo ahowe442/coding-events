@@ -3,12 +3,14 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Good Thymes Title</title>
+    <title>Coding Events List</title>
     <meta charset="UTF-8"/>
 
 </head>
 <body>
 <h1>Coding Events</h1>
+
+<p th:unless="${events} and ${events.size()}">No Events!</p>
 <nav>
     <ul>
         <th:block th:each="event : ${events}">
