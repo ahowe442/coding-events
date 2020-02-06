@@ -8,6 +8,13 @@
 
 </head>
 <body>
-
+<h1>Coding Events</h1>
+<nav>
+    <ul>
+        <th:block th:each="event : ${events}">
+            <li th:text="${event}"></li>
+        </th:block>
+    </ul>
+</nav>
 </body>
 </html>
